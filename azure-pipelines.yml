@@ -25,4 +25,4 @@ steps:
   inputs:
     nexusIqService: 'ngrok http 8070'
     applicationId: 'maven-example'
-    stage: 'Build'
+    stage: 'release'
