@@ -21,3 +21,8 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
+- task: NexusIqPipelineTask@1
+  inputs:
+    nexusIqService: 'ngrok http 8070'
+    applicationId: 'maven-example'
+    stage: 'Build'
